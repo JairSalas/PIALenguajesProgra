@@ -1,0 +1,52 @@
+<hgroup>
+    <h4>Símbolos</h4>
+    <p>En Prolog, los símbolos se refieren a los elementos básicos del lenguaje, como letras, números, operadores lógicos y signos de puntuación. Algunos símbolos comunes incluyen:</p>
+    <ul>
+        <li>Variables: Representadas por una letra mayúscula o una cadena de caracteres alfanuméricos precedidos por un guion bajo.</li>
+        <li>Átomos: Representaciones constantes de objetos o entidades, como números y cadenas de texto.</li>
+        <li>Operadores lógicos: Como la coma (,), el punto y coma (;), y la barra vertical (|), utilizados para construir predicados lógicos.</li>
+        <li>Conectores: Como el punto (.) al final de una cláusula o regla.</li>
+    </ul>
+</hgroup>
+
+<hgroup>
+    <h4>Sintaxis</h4>
+    <p>La sintaxis de Prolog se basa en reglas y hechos que describen relaciones lógicas entre entidades. Las reglas y los hechos se organizan en cláusulas, que son unidades fundamentales de lógica en Prolog. La sintaxis de Prolog sigue un conjunto de convenciones y reglas específicas, incluyendo la terminación de cláusulas con un punto (.) y la utilización de un conjunto de operadores lógicos para construir predicados y consultas.</p>
+</hgroup>
+
+<hgroup>
+    <h4>Esqueleto de los Programas</h4>
+    <p>Un programa en Prolog está compuesto por una serie de cláusulas, que pueden ser hechos o reglas. Estas cláusulas definen relaciones entre entidades y forman la base del conocimiento representado por el programa. Un esqueleto básico de un programa en Prolog puede incluir:</p>
+    <ul>
+        <li>Hechos: Cláusulas que establecen relaciones directas entre entidades.</li>
+        <li>Reglas: Cláusulas que definen relaciones derivadas entre entidades en función de otras relaciones.</li>
+        <li>Consultas: Expresiones que realizan preguntas al programa y devuelven respuestas basadas en las relaciones definidas.</li>
+    </ul>
+</hgroup>
+
+<hgroup>
+    <h4>Aplicación a Descargar</h4>
+    <p>Para editar y ejecutar programas en Prolog, descargar e instalar un entorno de desarrollo integrado (IDE) específico para Prolog, como SWI-Prolog o GNU Prolog. Estas aplicaciones proporcionan un conjunto de herramientas para escribir, depurar y ejecutar programas Prolog de manera eficiente.</p>
+</hgroup>
+
+<hgroup>
+    <h4>Tipo de Paradigma</h4>
+    <p>Prolog pertenece al paradigma de programación lógica. En este paradigma, los programas se construyen a partir de hechos y reglas lógicas que describen relaciones entre entidades. La ejecución de programas Prolog implica la búsqueda de soluciones que satisfacen las condiciones establecidas por las reglas lógicas definidas en el programa.</p>
+</hgroup>
+
+<hgroup>
+    <h4>Ejemplo de un Programa en Prolog</h4>
+    <p>A continuación se muestra un ejemplo de un programa escrito en Prolog que define relaciones entre personas en una familia:</p>
+    <pre>
+        <code>
+        padre(juan, maria).
+        padre(juan, pedro).
+        padre(pedro, ana).
+        padre(pedro, luis).
+
+        abuelo(X, Y) :- padre(X, Z), padre(Z, Y).
+        hermano(X, Y) :- padre(Z, X), padre(Z, Y), X \= Y.
+        </code>
+    </pre>
+    <p>Este programa establece relaciones entre padres e hijos, así como reglas para derivar relaciones como la de abuelo y hermano.</p>
+</hgroup>

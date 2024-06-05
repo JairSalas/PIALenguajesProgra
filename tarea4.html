@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4</title>
+    <link rel="stylesheet" href="css/menuTares.css">
+
+</head>
+<body>
+    
+    
+    <div class="principal">
+       <div class="descripcion bg-blue1">
+        <h1>Tarea 4</h1>
+        <p>
+            Defina los siguientes términos: <br>
+            Compilador <br>
+             Origen, tipos <br>
+             Intérprete <br>
+             Origen, tipos <br>
+            
+            
+        </p>
+       </div>
+       <div class="investigacion bg-blue3 justify">
+
+        <div class="menu">
+            <ul >
+                <a href="tarea3.html" id="anterior"><li><img class="p" src="img/btn/flecha-izquierda.png" alt=""></li></a>
+                <a href="menu.html" id="superior"><li><img class="p" src="img/btn/flecha-hacia-arriba.png" alt=""></li></a>
+                <a href="tarea5.html" id="siguiente"><li><img class="p" src="img/btn/flecha-derecha.png" alt=""></li></a>
+            </ul>
+       </div>
+        <hgroup>
+            <h4>Compilador</h4>
+            <p>
+                Un compilador es un programa informático que traduce el código fuente escrito en un lenguaje de programación de alto nivel a un código de bajo nivel, 
+                específicamente en código de máquina o en un código intermedio, que luego puede ser ejecutado por una computadora. </p>
+        </hgroup>
+        <hgroup>
+            <h4 >Origen del Compilador</h4>
+            <p>El origen del concepto de compilador se remonta a los primeros días de la informática y está relacionado con la necesidad de simplificar y automatizar el proceso de programación en lenguajes de más alto nivel que el lenguaje de máquina.
+
+                A lo largo de la década de 1950, con el desarrollo de los primeros lenguajes de programación de alto nivel como Fortran, Cobol y LISP, los programadores comenzaron a escribir programas en estos lenguajes en lugar de código de máquina directo. Sin embargo, los primeros lenguajes de alto nivel necesitaban ser traducidos manualmente a lenguaje de máquina antes de que pudieran ser ejecutados por la computadora.
+                
+                El primer compilador moderno conocido fue desarrollado por Grace Hopper y su equipo en 1952. El compilador A-0, también conocido como "lanzadera", fue diseñado para traducir instrucciones en lenguaje de programación ensamblador a código de máquina. Esto marcó el inicio de la era de los compiladores y allanó el camino para el desarrollo de compiladores más avanzados para lenguajes de programación de alto nivel.
+                
+                En 1957, IBM lanzó el primer compilador de Fortran, que fue un hito importante en la historia de la informática. Fortran fue el primer lenguaje de programación de alto nivel ampliamente utilizado y el desarrollo de su compilador ayudó a establecer los fundamentos de la teoría y la práctica de la compilación.
+                
+                Desde entonces, los compiladores han evolucionado significativamente en términos de su complejidad, eficiencia y capacidad de optimización. Hoy en día, los compiladores son herramientas sofisticadas que desempeñan un papel fundamental en el desarrollo de software, permitiendo a los programadores escribir programas en lenguajes de alto nivel y luego traducirlos a código de máquina que puede ser ejecutado por la computadora.</p>
+                <br>
+                <ol> <span class="negrita">Tipos De Compiladores</span>
+                     <br></br>
+                    <li><span class="negrita">Compiladores de Una Sola Pasada (One-Pass Compilers)</span>: Estos compiladores recorren el código fuente una sola vez, generando el código de salida a medida que analizan y procesan cada línea o sección del código. Son adecuados para lenguajes de programación simples y suelen ser más eficientes en términos de tiempo y recursos de memoria.</li>
+                    <li><span class="negrita">Compiladores de Múltiples Pasadas (Multi-Pass Compilers)</span>: En contraste con los compiladores de una sola pasada, estos compiladores realizan múltiples pasadas a través del código fuente, analizando y procesando diferentes aspectos del programa en cada pasada. Esto puede permitir una optimización más avanzada del código generado, pero puede requerir más tiempo y recursos de memoria.</li>
+
+                    <li><span class="negrita">Compiladores Frontales (Front-End Compilers)</span>: Estos compiladores se encargan de las primeras etapas del proceso de compilación, incluyendo el análisis léxico, sintáctico y semántico del código fuente. Generan una representación intermedia del programa que luego es procesada por el compilador posterior.</li>
+                    
+                    <li> <span class="negrita">Compiladores Traseros (Back-End Compilers):</span>: Estos compiladores se encargan de las últimas etapas del proceso de compilación, incluyendo la generación de código de máquina o código intermedio a partir de la representación intermedia generada por el compilador frontal. Realizan optimizaciones del código y adaptan el código generado a la arquitectura específica del hardware de la computadora de destino.</li>
+
+                    <li>
+                     <span class="negrita"> Compiladores de Justo a Tiempo (Just-In-Time Compilers - JIT)</span> : Estos compiladores traducen el código de un programa a código de máquina durante el tiempo de ejecución, en lugar de hacerlo antes de la ejecución. Son comúnmente utilizados en entornos de ejecución de tiempo de ejecución como Java Virtual Machine (JVM) y .NET Common Language Runtime (CLR), donde el código fuente se compila a código intermedio y luego se compila a código de máquina según sea necesario durante la ejecución del programa.
+                    </li>
+
+                </ol>
+            <br>
+        </hgroup>
+        <hgroup>
+            <h4>Interpete</h4>
+            <p>
+                Un intérprete es un programa informático que lee y ejecuta instrucciones escritas en un lenguaje de programación de alto nivel directamente, línea por línea, sin la necesidad de compilar el código completo antes de la ejecución. Funciona de manera similar a un compilador en el sentido de que traduce el código fuente a un formato ejecutable, pero lo hace de manera incremental y en tiempo real mientras el programa se está ejecutando.  
+             </p>
+        </hgroup>
+        <hgroup>
+            <h4>Origen Interprete</h4>
+            <p>El concepto de intérprete surgió como una alternativa a esta forma de programación manual. En lugar de traducir el código de alto nivel a código de máquina de una vez, como lo hace un compilador, un intérprete lee, analiza y ejecuta el código fuente línea por línea o en bloques pequeños, sin necesidad de realizar una traducción completa antes de la ejecución.
+
+                El primer intérprete moderno conocido es el intérprete Lisp, desarrollado en 1958 por Steve Russell y su equipo en el MIT. Este intérprete permitía a los usuarios ejecutar programas escritos en el lenguaje de programación Lisp directamente en la computadora, sin necesidad de compilarlos previamente. Desde entonces, el concepto de intérprete ha evolucionado y se ha utilizado en una amplia variedad de lenguajes de programación y entornos de desarrollo.</p>
+                <br></br>
+                <ol> <span class="negrita">Tipos de Interprete</span>
+                    <li>
+                        <strong>Intérpretes de Línea de Comandos (CLI - Command Line Interpreter):</strong>
+                        <p>Estos intérpretes leen y ejecutan comandos ingresados por el usuario en una interfaz de línea de comandos. Son comunes en sistemas operativos como Unix, Linux y Windows, donde proporcionan una forma de interactuar con el sistema operativo y ejecutar programas y utilidades.</p>
+                    </li>
+                    <li>
+                        <strong>Intérpretes de Scripting:</strong>
+                        <p>Estos intérpretes están diseñados para ejecutar scripts o programas escritos en lenguajes de scripting como Python, Perl, Ruby, JavaScript, entre otros. Permiten la ejecución de scripts directamente sin necesidad de compilarlos previamente.</p>
+                    </li>
+                    <li>
+                        <strong>Intérpretes de Lenguajes de Consulta:</strong>
+                        <p>Estos intérpretes leen y ejecutan consultas escritas en lenguajes de consulta como SQL (Structured Query Language). Se utilizan para interactuar con bases de datos y realizar operaciones de consulta, inserción, actualización y eliminación de datos.</p>
+                    </li>
+                    <li>
+                        <strong>Intérpretes de Comandos de Shell:</strong>
+                        <p>Estos intérpretes están diseñados para ejecutar comandos y scripts de shell en sistemas operativos Unix y Linux. Permiten a los usuarios interactuar con el sistema operativo a través de una interfaz de línea de comandos, ejecutando comandos y scripts de shell para realizar tareas como administración del sistema, gestión de archivos y automatización de tareas.</p>
+                    </li>
+                    <li>
+                        <strong>Intérpretes de Lenguajes de Programación Específicos:</strong>
+                        <p>Algunos intérpretes están diseñados para ejecutar programas escritos en lenguajes de programación específ
+                
+        </hgroup>
+        
+    </div>
+        
+    
+    </div>
+    <script src="../scripts/menuTareas.js"></script>
+</body>
+</html>

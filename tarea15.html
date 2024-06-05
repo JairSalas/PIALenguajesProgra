@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 15</title>
+    <link rel="stylesheet" href="css/menuTares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> 
+</head>
+<body>
+    <div class="principal">
+       <div class="descripcion bg-blue1">
+            <h1>Tarea#15</h1>
+       </div>
+       <div class="investigacion bg-blue3 justify">
+            <h1>Busqueda en vector</h1>
+            <div class="menu">
+                <ul>
+                    <a href="tarea14.html" id="anterior"><li><img class="p" src="img/btn/flecha-izquierda.png" alt=""></li></a>
+                    <a href="menu.html" id="superior"><li><img class="p" src="img/btn/flecha-hacia-arriba.png" alt=""></li></a>
+                    <a href="tarea16.html" id="siguiente"><li><img class="p" src="img/btn/flecha-derecha.png" alt=""></li></a>
+                </ul>
+           </div>
+
+            <hgroup>
+                <h4>Descripcion</h4>
+                <p>Elaborar un programa en JAVA que realice una búsqueda de un número en un vector, mostrando solamente un mensaje indicando cuantas veces apareció el número. Además de imprimir el vectorEjemplo:Valor a buscar: 4“El número 4 aparece 2 veces en el vector: ”</p><section>
+                <pre>
+                    <code class="language-java">
+
+import java.util.Scanner;
+
+public class BusquedaVector {
+    public static void main(String[] args) {
+        Scanner lec = new Scanner(System.in);
+        
+        // Definir el vector
+        int[] vector = {1, 4, 7, 9, 21, 4, 0, 2, 5, 2};
+        
+        // Imprimir el vector
+        System.out.println("Vector:");
+        for (int i = 0; i < vector.length; i++) {
+            System.out.print(vector[i] + " ");
+        }
+        
+        // Solicitar al usuario el valor a buscar
+        System.out.println("\n\nValor a buscar: ");
+        int valorBuscado =lec.nextInt();
+        
+        // Contar cuántas veces aparece el valor en el vector
+        int contador = 0;
+        for (int i = 0; i < vector.length; i++) {
+            if (vector[i] == valorBuscado) {
+                contador++;
+            }
+        }
+        
+        // Mostrar el resultado
+        System.out.println("\nEl número " + valorBuscado + " aparece " + contador + " veces en el vector.");
+    }
+}
+
+
+
+                    </code>
+                </pre>
+            </section>
+        </div>
+    </div>
+    
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

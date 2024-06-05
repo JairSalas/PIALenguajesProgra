@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 14</title>
+    <link rel="stylesheet" href="css/menuTares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> 
+</head>
+<body>
+    <div class="principal">
+       <div class="descripcion bg-blue1">
+            <h1>Tarea#14</h1>
+       </div>
+       <div class="investigacion bg-blue3 justify">
+            <h1>Seria A</h1>
+            <div class="menu">
+                <ul>
+                    <a href="tarea13.html" id="anterior"><li><img class="p" src="img/btn/flecha-izquierda.png" alt=""></li></a>
+                    <a href="menu.html" id="superior"><li><img class="p" src="img/btn/flecha-hacia-arriba.png" alt=""></li></a>
+                    <a href="tarea15.html" id="siguiente"><li><img class="p" src="img/btn/flecha-derecha.png" alt=""></li></a>
+                </ul>
+           </div>
+
+            <hgroup>
+                <h4>Descripcion</h4>
+                <p>Construya un programa en JAVA. Que calcule e imprima la siguiente serie para los N primeros  términos</p> </hgroup>
+            <section>
+                <pre>
+                    <code class="language-java">
+                        /*Nombre:Iver Jair Salas Sanchez Matricula:2173891 Hora:N5 */
+                        /*Construya un programa en JAVA. Que calcule e imprima la siguiente serie para los N primeros  términos :1,8,243,16384,19531125*/
+                        
+                        import java.util.Scanner;
+                        
+                        public class SerieA {
+                        
+                            public static void main(String[] args) {
+                                
+                                Scanner read=new Scanner(System.in);
+                                int n;
+                                long num;
+                                System.out.print("\nIndique  cuantos numeros de la serie quiere: ");
+                                n=read.nextInt();
+                        
+                                for (int i = 1; i <=n; i++) {
+                                    num=(long) Math.pow(i,2*i-1);
+                                    System.out.println("Num"+i+": "+num);
+                                }//Fin ciclo for
+                        
+                                read.close();
+                        
+                        
+                        
+                            }//Fin clase Main
+                        }//Fin seriA
+
+
+                    </code>
+                </pre>
+            </section>
+        </div>
+    </div>
+    
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 7</title>
+    <link rel="stylesheet" href="css/menuTares.css">
+
+</head>
+<body>
+    
+    
+    <div class="principal">
+       <div class="descripcion bg-blue1">
+        <h1>Tarea#7 Lisp</h1>
+       
+       </div>
+       <div class="investigacion bg-blue3 justify">
+        <h1>Lenguaje de Programación Lisp</h1>
+
+        <div class="menu">
+            <ul >
+                <a href="tarea6.html" id="anterior"><li><img class="p" src="img/btn/flecha-izquierda.png" alt=""></li></a>
+                <a href="menu.html" id="superior"><li><img class="p" src="img/btn/flecha-hacia-arriba.png" alt=""></li></a>
+                <a href="tarea8.html" id="siguiente"><li><img class="p" src="img/btn/flecha-derecha.png" alt=""></li></a>
+            </ul>
+       </div>
+
+        <hgroup>
+            <h4>Símbolos</h4>
+            <p>En Lisp, los símbolos se refieren a los elementos básicos del lenguaje, como variables, funciones y macros. Algunos símbolos comunes incluyen:</p>
+            <ul>
+                <li>Átomos: Representan valores constantes, como números, cadenas de texto y símbolos.</li>
+                <li>Listas: Estructuras de datos compuestas por átomos y otras listas, delimitadas por paréntesis.</li>
+                <li>Funciones: Bloques de código que realizan una tarea específica y pueden ser invocados con argumentos.</li>
+                <li>Macros: Expresiones especiales que se expanden en código Lisp durante el proceso de compilación o evaluación.</li>
+            </ul>
+        </hgroup>
+        
+        <hgroup>
+            <h4>Sintaxis</h4>
+            <p>La sintaxis de Lisp se caracteriza por su simplicidad y uniformidad. Algunas características importantes de la sintaxis de Lisp incluyen:</p>
+            <ul>
+                <li>Notación de prefijo: Las expresiones Lisp se representan mediante notación de prefijo, donde el operador precede a sus operandos.</li>
+                <li>Paréntesis: Los paréntesis se utilizan para delimitar listas y agrupar expresiones.</li>
+                <li>Funciones de alto orden: Lisp es un lenguaje funcional que trata las funciones como ciudadanos de primera clase, lo que significa que las funciones pueden ser pasadas como argumentos a otras funciones y devueltas como resultados.</li>
+            </ul>
+        </hgroup>
+        
+        <hgroup>
+            <h4>Esqueleto de los Programas</h4>
+            <p>Un programa en Lisp sigue una estructura básica que incluye:</p>
+            <ul>
+                <li>Declaraciones de funciones y macros: Se definen las funciones y macros necesarias para implementar la lógica del programa.</li>
+                <li>Cuerpo principal del programa: Contiene la lógica principal del programa, incluyendo la llamada a funciones y macros definidas y la manipulación de datos.</li>
+            </ul>
+        </hgroup>
+        
+        <hgroup>
+            <h4>Aplicación a Descargar</h4>
+            <p>Para editar y ejecutar programas en Lisp, puedes descargar e instalar un entorno de desarrollo integrado (IDE) como Emacs con el modo Lisp, SBCL (Steel Bank Common Lisp) o Clozure CL. Estas aplicaciones proporcionan un conjunto de herramientas para escribir, depurar y ejecutar programas Lisp de manera eficiente.</p>
+        </hgroup>
+        
+        <hgroup>
+            <h4>Tipo de Paradigma</h4>
+            <p>Lisp es un lenguaje de programación multiparadigma que admite paradigmas de programación funcional y de evaluación perezosa. Esto significa que puedes escribir código en Lisp utilizando estilos de programación funcional, donde las funciones son tratadas como ciudadanos de primera clase y se evita el uso de estados y mutabilidad de datos.</p>
+        </hgroup>
+        
+        <hgroup>
+            <h4>Ejemplo de un Programa en Lisp</h4>
+            <p>A continuación se muestra un ejemplo de un programa escrito en Lisp que calcula el factorial de un número utilizando una función recursiva:</p>
+            <pre>
+                <code>
+                (defun factorial (n)
+                  (if (<= n 1)
+                      1
+                      (* n (factorial (- n 1)))))
+                </code>
+            </pre>
+            <p>Este programa define una función `factorial` que calcula el factorial de un número `n` utilizando la recursión.</p>
+        </hgroup>
+        
+        
+       
+       
+        
+    </div>
+        
+    
+    </div>
+    <script src="../scripts/menuTareas.js"></script>
+</body>
+</html>

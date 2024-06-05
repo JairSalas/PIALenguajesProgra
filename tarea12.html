@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 12</title>
+    <link rel="stylesheet" href="css/menuTares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> 
+</head>
+<body>
+    <div class="principal">
+       <div class="descripcion bg-blue1">
+            <h1>Tarea#12</h1>
+       </div>
+       <div class="investigacion bg-blue3 justify">
+            <h1>Conversion De Temperatura</h1>
+            <div class="menu">
+                <ul>
+                    <a href="tarea11.html" id="anterior"><li><img class="p" src="img/btn/flecha-izquierda.png" alt=""></li></a>
+                    <a href="menu.html" id="superior"><li><img class="p" src="img/btn/flecha-hacia-arriba.png" alt=""></li></a>
+                    <a href="tarea13.html" id="siguiente"><li><img class="p" src="img/btn/flecha-derecha.png" alt=""></li></a>
+                </ul>
+           </div>
+
+            <hgroup>
+                <h4>Descripcion</h4>
+                <p>Elabore un programa en JAVA que mediante un Menú de opciones permita calcular la conversión de escala de temperatura:
+                    1. De grados Centígrados a grados Fahrenheit
+                    2. De grados Fahrenheit a grados Centígrados</p>
+            </hgroup>
+            <section>
+                <pre>
+                    <code class="language-java">
+/*Nombre:Iver Jair Salas Sanchez Matricula:2173891 Hora:N5 */
+/*Elabore un programa en JAVA que mediante un Menú de opciones permita calcular la conversión de escala de temperatura:1. De grados Centígrados a grados Fahrenheit2. De grados Fahrenheit a grados Centígrados */
+
+import java.util.Scanner;
+
+public class ConversionTemp {
+
+    public static void main(String[] args) {
+        Scanner read = new Scanner(System.in);
+        int opcion;
+        double temp, tempConver;
+        
+        System.out.print("\nIndique la temperatura: ");
+        temp = read.nextDouble();
+
+        System.out.println("\nMenú de opciones:");
+        System.out.println("1. Convertir de Celsius a Fahrenheit");
+        System.out.println("2. Convertir de Fahrenheit a Celsius");
+        System.out.print("Seleccione una opción: ");
+        opcion = read.nextInt();
+
+        switch (opcion) {
+            case 1:
+                tempConver = celsiusAFahrenheit(temp);
+                System.out.printf("La temperatura en Fahrenheit es: %.2f °F", tempConver);
+                break;
+            case 2:
+                tempConver = fahrenheitACelsius(temp);
+                System.out.printf("La temperatura en Celsius es: %.2f °C", tempConver);
+                break;
+            default:
+                System.out.println("Opción no válida.");
+                break;
+        }
+        read.close();
+    }//fin main
+
+    // Función para convertir de Celsius a Fahrenheit
+    private static double celsiusAFahrenheit(double celsius) {
+        return celsius * 9 / 5 + 32;
+    }
+
+    // Función para convertir de Fahrenheit a Celsius
+    private static double fahrenheitACelsius(double fahrenheit) {
+        return (fahrenheit - 32) * 5 / 9;
+    }
+}//fin ConversionTemp
+
+                    </code>
+                </pre>
+            </section>
+        </div>
+    </div>
+    
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

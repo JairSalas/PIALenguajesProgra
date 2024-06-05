@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 16</title>
+    <link rel="stylesheet" href="css/menuTares.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> 
+</head>
+<body>
+    <div class="principal">
+       <div class="descripcion bg-blue1">
+            <h1>Tarea#16</h1>
+       </div>
+       <div class="investigacion bg-blue3 justify">
+            <h1>Busqueda en Matriz</h1>
+            <div class="menu">
+                <ul>
+                    <a href="tarea15.html" id="anterior"><li><img class="p" src="img/btn/flecha-izquierda.png" alt=""></li></a>
+                    <a href="menu.html" id="superior"><li><img class="p" src="img/btn/flecha-hacia-arriba.png" alt=""></li></a>
+                    <a href="tarea17.html" id="siguiente"><li><img class="p" src="img/btn/flecha-derecha.png" alt=""></li></a>
+                </ul>
+           </div>
+
+            <hgroup>
+                <h4>Descripcion</h4>
+                <p>onstruya un programa en JAVA que, al recibir como datos un arreglo bidimensional de NxMelementos de tipo entero y un número entero, determine cuántas veces se encuentra este número dentro del arreglo. Además, que imprima la matriz al final </p><section>
+                <pre>
+                    <code class="language-java">
+
+                        /*Nombre:Iver Jair Salas Sanchez Matricula:217891 :N5
+                        * Elaborar un programa en JAVA que realice una búsqueda de un número en un vector, mostrando solamente un mensaje indicando cuantas veces apareció el número. Además de imprimir el vector
+                        */
+                       import java.util.Scanner;
+                       
+                       public class BusquedaMatriz {
+                           public static void main(String[] args) {
+                              Scanner scanner = new Scanner(System.in);
+                               
+                               // Leer dimensiones de la matriz
+                               System.out.print("Ingrese el número de filas (N): ");
+                               int N = scanner.nextInt();
+                               System.out.print("Ingrese el número de columnas (M): ");
+                               int M = scanner.nextInt();
+                               
+                               // Crear la matriz
+                               int[][] matrix = new int[N][M];
+                               
+                               // Leer los elementos de la matriz
+                               System.out.println("Ingrese los elementos de la matriz:");
+                               for (int i = 0; i < N; i++) {
+                                   for (int j = 0; j < M; j++) {
+                                       matrix[i][j] = scanner.nextInt();
+                                   }
+                               }
+                               
+                               // Leer el número a buscar
+                               System.out.print("Ingrese el número a buscar: ");
+                               int target = scanner.nextInt();
+                               
+                               // Buscar el número en la matriz
+                               int count = 0;
+                               for (int i = 0; i < N; i++) {
+                                   for (int j = 0; j < M; j++) {
+                                       if (matrix[i][j] == target) {
+                                           count++;
+                                       }
+                                   }
+                               }
+                               
+                               // Imprimir el resultado
+                               System.out.println("El número " + target + " se encuentra " + count + " veces en la matriz.");
+                               
+                               // Imprimir la matriz
+                               System.out.println("La matriz es:");
+                               for (int i = 0; i < N; i++) {
+                                   for (int j = 0; j < M; j++) {
+                                       System.out.print(matrix[i][j] + " ");
+                                   }
+                                   System.out.println();
+                               }
+                               
+                               scanner.close(); 
+                           }
+                       }
+                       
+
+
+
+                    </code>
+                </pre>
+            </section>
+        </div>
+    </div>
+    
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

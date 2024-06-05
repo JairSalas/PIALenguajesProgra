@@ -1,0 +1,122 @@
+/* Estilos CSS  Menu Tareas*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:  #10929b;
+}
+
+.principal{
+    margin: 0 auto;
+    width: 1000px;
+   padding: 30px;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    padding-top: 50px;
+}
+
+.grid-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-auto-rows: minmax(100px, auto); /* Altura mínima de las filas */
+    grid-gap: 10px; /* Espacio entre elementos */
+}
+
+.grid-container li {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db; /* Color del botón bonito */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.grid-container li:hover{
+    background-color: #acd2ec;
+}
+
+a{
+    text-decoration: none;
+
+}
+.p {
+    width: 65px;
+    padding-right: 40px;
+  
+}
+
+.menu li{
+    display: inline-block;
+}
+/*  Fin de estilos para  menu tareas*/
+.descripcion{
+    padding: 30px;
+}
+.investigacion{
+    padding: 30px;
+
+}
+/* Inicio de estilos para tareas*/
+section {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+
+
+/*  Fin de estilos para  menu tareas*/
+
+/*  Inicio color palet*/
+.bg-blue1{
+    background-color: #006270;
+    color: white;
+}
+.bg-blue2{
+    background-color: #009394;
+}
+.bg-blue3{
+    background-color: #00E0C7;
+}
+.bg-white{
+    background-color: #fff;
+}
+.justify{
+    text-align: justify;
+}
+/* Fin color palete */
+.negrita{
+   font-weight: bold;
+}
+/*inicio de clases para tareas 5 a 11*/
+.main{
+    width: 1000px;
+    margin: 0 auto;
+   
+}
+.head{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50px; /* Altura de ejemplo */
+    border: 1px solid #ccc; /* Borde de ejemplo */
+}
+
+.botones{
+    display: flex;
+   justify-content: flex-end;
+}
+.icon{
+   width: 80px;
+   height: 39px;
+}
+
